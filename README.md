@@ -4,7 +4,7 @@ a high level version of my assembly like language (EzASM) that shouldnt* be that
 ## syntax:
 ### operators:
 ---math---
-" + " : add      : adds 2 values (int, float, str(concatination))
+" + " : add      : adds 2 values (int, float, str(concatination)) \n
 " - " : subtract : subtracts 2 values (int, float)
 " * " : multiply : multiplys 2 values (int, float)
 " / " : divide   : divides the first value by the second (int, float)
