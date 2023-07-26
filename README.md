@@ -1,8 +1,8 @@
 # EzLang
 it is a high level version of my assembly like language (EzASM) that shouldnt* be that hard to compile down to assembly
 
-** syntax:
-*** operators:
+## syntax:
+### operators:
 ---math---
 " + " : add      : adds 2 values (int, float, str(concatination))
 " - " : subtract : subtracts 2 values (int, float)
