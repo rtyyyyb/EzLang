@@ -26,6 +26,7 @@ Unassigned variables have default values listed below:
 - str : ""
 - bool : False
 - list : [ ]
+  
 global variables can be accessed and changed globaly no matter where its being changed or accessed like seen below::
 ```
 var int:foo 
