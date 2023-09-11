@@ -1,29 +1,28 @@
 # EzLang
-a high level version of my assembly like language (EzASM) that shouldnt* be that hard to compile down to assembly
-## syntax:
-### operators:
-#### math
+
+## info
+
+EzLang is is a high level proggraming language that is meant to have easy to learn syntax and to be easy to go from a idea to a program. it will mainly be interprited but i do plan on making a customisabe compiler compilers.
+the offical discord server can be found here https://discord.gg/ez9FudnDxS where you can talk about anyhting your using EzLang for or any questions have about the lang and keep updated on the progress
+
+## syntax 
+
+this section will go over all the syntax you need to know to get started with programming EzLang
+
+---
+
+### variables
+
+there are 2 kinds of variables. global and local. global variables are defined using the `var` keyword the the type with a `:` and the name of a variable with its value
+examples:
 ```
-" + " : add      : adds 2 values (int, float, str(concatination))
-" - " : subtract : subtracts 2 values (int, float)
-" * " : multiply : multiplys 2 values (int, float)
-" / " : divide   : divides the first value by the second (int, float)
-" ^ " : power    : raises the first values to the power of the second (int, float)
-" % " : modulus  : does the first balue mod the second (int,float)
+var int:foo 108
+var str:foo "hello"
+var bool:foo True
+var list:foo [1, 0, 4]
 ```
-#### logic
-```
-" or "   : or   : does bitwise or to 2 interger values (int)
-" and "  : and  : does bitwise and to 2 interger values (int) 
-" xor "  : xor  : does bitwise xor to 2 interger values (int)
-" nor "  : nor  : does bitwise nor to 2 interger values (int)
-" nand " : nand : does bitwise nand to 2 interger values (int)
-" xnor " : xnor : does bitwise xnor to 2 interger values (int)
-```
-### types:
-```
-int   : conversion function "int()" acceptable values (str, float, bool)
-bool  : conversion function "bool()" acceptable values (int(takes the value of the first bit 1 = True, 0 = False)) 
-str   : conversion function "str()" acceptable values (int, float, bool)
-float : conversion function "float()" acceptable values (int, str, bool)
-```
+now keep in mind that you do not have to assing the variable a value and they will have defalts listed below:
+- int : 0
+- str : ""
+- bool : False
+- list : [ ]
