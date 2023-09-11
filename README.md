@@ -17,12 +17,39 @@ there are 2 kinds of variables. global and local. global variables are defined u
 examples:
 ```
 var int:foo 108
-var str:foo "hello"
-var bool:foo True
-var list:foo [1, 0, 4]
+var str:bar "hello"
+var bool:dec True
+var list:nub [1, 0, 4]
 ```
-now keep in mind that you do not have to assing the variable a value and they will have defalts listed below:
+Unassigned variables have default values listed below:
 - int : 0
 - str : ""
 - bool : False
 - list : [ ]
+global variables can be accessed and changed globaly no matter where its being changed or accessed like seen below::
+```
+var int:foo 
+
+func bar(int:x){
+    ret: foo + x
+}
+
+var bool:done
+
+while done == False{
+    bar(foo)
+    done = True
+}
+
+for i in [10]{
+    foo += 1
+}
+```
+locals can only be accessed and changed if it is in there local space and are created by: 
+- defining a variable in a function
+- any function argument
+- the counter in a for loop
+
+
+
+
