@@ -55,7 +55,7 @@ exsamples are shown below:
 ```
 func bar(int:foo){
     var int:x 10
-    both variables x and foo are local to this function
+    # both variables x and foo are local to this function
 }
 
 for i in [1:5]{ 
