@@ -1,0 +1,14 @@
+var int:a 1
+var int:b 0
+var int:c 0
+
+func next_num(){
+    c = a + b
+    a = b #test
+    b = c
+    ret: c
+}
+# etes
+for i[32]{
+    prt(next_num())
+}
