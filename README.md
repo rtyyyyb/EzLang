@@ -29,7 +29,8 @@ Unassigned variables have default values listed below:
   
 global variables can be accessed and changed globaly no matter where its being changed or accessed like seen below::
 ```
-var int:foo 
+var int:foo
+# foo is global
 
 func bar(int:x){
     ret: foo + x
@@ -50,6 +51,23 @@ locals can only be accessed and changed if it is in there local space and are cr
 - defining a variable in a function
 - any function argument
 - the counter in a for loop
+exsamples are shown below:
+```
+func bar(int:foo){
+    var int:x 10
+    both variables x and foo are local to this function
+}
+
+for i in [1:5]{ 
+    i += 1
+    # i is local to the for loop
+}
+```
+
+
+
+
+
 
 
 
