@@ -2,7 +2,7 @@ var int:a 1
 var int:b 0
 var int:c 0
 
-func next_num(int:e str:f){
+func next_num(int:egveh str:f){
     var int:de 123
     c = a + b
     a = b #test
@@ -10,7 +10,8 @@ func next_num(int:e str:f){
     ret: c
 }
 
-func next_num(){
+func testings(int:a, int:y){
+
 }
 
 var int:test 7587875

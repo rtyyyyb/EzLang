@@ -117,6 +117,12 @@ def startup():
                         args = line[3:-2]
                         for i,arg in enumerate(args):
                             if arg in ["int","str","bool","list"]:
+                                if args[i+2] in tokens:
+                                    semistart = len(line[0])+1
+                                    start = len(" ".join(line[:i+2]))-1
+                                    end = len(args[i+2])+start-1
+                                    semiend = len(d)-3
+                                    error("Name resolution error",d,index,"name: \""+args[i+2]+"\" already in use",start,end,semistart,semiend)
                                 tokens[args[i+2]] = makevar(args[i:i+2],scope[-1])
                     case "}":
                         if len(scope) >= 1:
